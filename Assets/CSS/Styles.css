@@ -1,0 +1,141 @@
+*{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+header {
+    background-color: darkslategray;
+    text-align: center;
+    display:inline-flex;
+    margin:0;
+}
+
+header img {
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: grey;
+    border-radius: 30%;
+    height: 25%;
+    width: 25%;
+    margin: 1em 0;
+}
+
+h1 {
+    color: #17130B;
+    margin-top: 4em;
+    
+}
+
+#elle {
+    font-family: cursive;
+}
+
+body {
+    position: relative;
+    background-color:lightslategray;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    color: black;
+}
+ a:hover{
+    cursor: pointer;
+    color: cyan;
+ }
+
+ a:visited {
+     color: darkcyan;
+ }
+
+nav {
+    background-color: darkslategray;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    padding: 2.5em 0;
+    margin: 2.5em 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#nav-buttons {
+    display: inline-flex;
+    list-style-type: none;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+#nav-buttons li {
+    padding: 0 2.5em 0;
+}
+
+#About-Me-content {
+    display: inline-flex;
+}
+
+#About-Me-content h2 p {
+    text-align: center;
+    margin: auto;
+    vertical-align: middle;
+    max-width: 50%;
+    max-height: 50%;
+}
+#Profile-Photo {
+   margin: auto;
+   box-sizing: border-box;
+   border: 0.5 em;
+   border-style: solid;
+   border-color:aquamarine;
+   max-width: 50%;
+   max-height: 50%;
+   border-radius: 15%;
+}
+
+section{
+    margin: 0 5em;
+}
+.Portfolio-Section {
+    padding: 2.5em 0;
+    display: flex;
+    margin: 2.5em 0;
+    justify-content: space-evenly;
+  }
+
+#Project-Highlight {
+    width:100%;
+    max-width: 50em;
+}
+
+.Project-Images {
+    width: 25%;
+    height: 25%;
+    justify-content: auto;
+    max-width: 25em;
+    max-height: 25em;
+}
+
+.sidebar-Header {
+    border-right: 0.5em;
+    border-right-style: solid;
+    border-color: teal;
+    text-align: right;
+    width: 20%;
+}
+
+.sidebar-Header h2 {
+    padding: 0 1em 0 0;
+}
+
+#Project-Tiles img {
+    border-style: solid;
+    border-color:aquamarine;
+    border: 0.5 em;
+    border-radius: 10%;
+    box-sizing: border-box;
+} 
+
+.content {
+    width: 80%;
+    padding: 0 1em;
+}

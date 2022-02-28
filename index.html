@@ -4,17 +4,17 @@
         <title>C.l.Robinson Portfolio</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type ="text/CSS" href="/Assets/CSS/Styles.css">
+        <link rel="stylesheet" type ="text/CSS" href="./Assets/CSS/Styles.css">
     </head> 
 
     <body>
         <header>
-            <h1>Welcome to Christina <span id="elle">l</span>. Robinson's Portfolio</h1>
-            <img src="/Assets/Images/" alt="Portfolio-Logo">        
+            <img src="./Assets/Images/CLR-Logo.png" alt="Portfolio-Logo">
+            <h1>Welcome to Christina <span id="elle">l</span>. Robinson's Portfolio</h1>        
         </header>
 
         <nav>
-            <ul>
+            <ul id="nav-buttons">
                 <li><a href=#Home>Home</a></li>
                 <li><a href=#About-Me>About Me</a></li>
                 <li><a href=#Projects-Apps> Projects & Apps</a></li>
@@ -24,33 +24,47 @@
 
         <main>
             <section id="About-Me" class="Portfolio-Section">
-                <h2>A Little About Me (a backstory of sorts):</h2>
-                <img src="/Assets/Images/..." id="Profile-Photo" alt="It's Me, Christina!">
-                <p>Lorem IpsumLorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nisl ex, rutrum et ex id, luctus ornare nulla. Suspendisse pharetra in lectus vel commodo. Donec mattis erat ac suscipit sollicitudin. Cras non velit blandit, iaculis diam eget, venenatis nibh. Integer elit odio, efficitur eget turpis eget, posuere vestibulum odio. Maecenas laoreet libero velit, id rhoncus enim facilisis eu. Pellentesque ex quam, hendrerit sollicitudin ultrices sed, ullamcorper malesuada eros. Ut faucibus nisi elementum eros ornare, ut accumsan sapien pellentesque. Nulla tincidunt orci non est commodo facilisis at ac ante. Nam ut varius turpis</p>
+                <div id="About-Me-sidebar" class="sidebar-Header">
+                    <h2>About Me</h2>
+                </div>
+                <div id="About-Me-content" class="content">
+                    <img src="./Assets/Images/Profile-Pic.jpg" id="Profile-Photo" alt="It's Me, Christina!">
+                    <h2>A Little About Me:</h2>
+                    <p>Lorem IpsumLorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nisl ex, rutrum et ex id, luctus ornare nulla. Suspendisse pharetra in lectus vel commodo. Donec mattis erat ac suscipit sollicitudin. Cras non velit blandit, iaculis diam eget, venenatis nibh. Integer elit odio, efficitur eget turpis eget, posuere vestibulum odio. Maecenas laoreet libero velit, id rhoncus enim facilisis eu. Pellentesque ex quam, hendrerit sollicitudin ultrices sed, ullamcorper malesuada eros. Ut faucibus nisi elementum eros ornare, ut accumsan sapien pellentesque. Nulla tincidunt orci non est commodo facilisis at ac ante. Nam ut varius turpis</p>
+                </div>
             </section>
-            <section id="Projects-Apps" class="Project-Section">
-                <h2>Portfolio Projects</h2>
-                <a href=""><img src="/Assets/Images/..." alt="Most recent project screenshot" id="Project-Highlight"></a>
-                <h3><strong>Most Recent Project I've been working on</strong></h3>
-                <a href=""><img src="/Assets/Images/..." alt="Project Screenshot 2" id="Project2"></a>
-                <a href=""><img src="/Assets/Images/..." alt="Project Screenshot 3" id="Project3"></a>
-                <a href=""><img src="/Assets/Images/..." alt="Project Screenshot 4" id="Project4"></a>
+            <section id="Projects-Apps" class="Portfolio-Section">
+                <div id="Projects-sidebar" class="sidebar-Header">
+                    <h2>Projects & Apps</h2>
+                </div>
+                <div id="Project-Tiles" class="content">
+                    <h2>Portfolio Projects</h2>
+                    <a href=""><img src="./Assets/Images/Snow-Pic.jpg" alt="Most recent project screenshot" id="Project-Highlight"></a>
+                    <h3><strong>Most Recent Project I've been working on</strong></h3>
+                    <a href=""><img src="./Assets/Images/Rock-Pic.jpg" alt="Project Screenshot 2" class="Project-Images"></a>
+                    <a href=""><img src="./Assets/Images/Beach-Pic.jpg" alt="Project Screenshot 3" class="Project-Images"></a>
+                    <a href=""><img src="./Assets/Images/Rainbow-Pic.jpg" alt="Project Screenshot 4" class="Project-Images"></a>
+                </div>
             </section>
 
-            <section id="ContactMe" class="Porfolio-Section">
-                <div id="ContactMe"
-                <h2>Like what you see? Contact Me!</h2>
-                <ul>
-                    <li>Email:<a href="mailto:xsnachannell@gmail.com">xsnachannell@gmail.com</a></li>
-                    <li>GitHub:<a href="">@ChannellNumber5</a></li>
-                    <li>LinkedIn:<a href="">linkedIn link</a></li>
-                </ul>
-                <br>
-                <h3>Want to get updates when I post a new project? Drop your email below!</h3>
-                <form>
-                    <input type="text" value="Enter your Email Address" id="userEmailAddress" name="userEmailAddress">
-                    <input type="submit" value="Submit">
-                </form>
+            <section id="ContactMe" class="Portfolio-Section">
+                <div id="ContactMe-sidebar" class="sidebar-Header">
+                    <h2>Contact Me</h2>
+                </div>
+                <div class="content">    
+                    <h2>Like what you see? Contact Me!</h2>
+                    <ul>
+                        <li>Email:<a href="mailto:xsnachannell@gmail.com">xsnachannell@gmail.com</a></li>
+                        <li>GitHub:<a href="https://github.com/ChannellNumber5">@ChannellNumber5</a></li>
+                        <li><a href="www.linkedin.com/in/channellnumber5">LinkedIn</a></li>
+                    </ul>
+                    <br>
+                    <h3>Want to get updates when I post a new project? Drop your email below!</h3>
+                    <form>
+                        <input type="text" value="Enter your Email Address" id="userEmailAddress" name="userEmailAddress">
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
             </section>
         </main>
     </body>
