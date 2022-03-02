@@ -1,4 +1,4 @@
-*{
+* {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
   }
 
@@ -7,6 +7,9 @@ header {
     text-align: center;
     display:inline-flex;
     margin:0;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 5%;
 }
 
 header img {
@@ -14,15 +17,16 @@ header img {
     border-style: solid;
     border-color: grey;
     border-radius: 30%;
-    height: 25%;
-    width: 25%;
+    height: 15%;
+    width: 15%;
     margin: 1em 0;
 }
 
 h1 {
     color: #17130B;
     margin-top: 4em;
-    
+    text-align: center;
+    margin: auto;
 }
 
 #elle {
@@ -35,43 +39,41 @@ body {
     margin: 0;
 }
 
-a {
+a:link {
     text-decoration: none;
     outline: none;
     color: black;
 }
- a:hover{
+
+a:visited {
+    color: darkcyan;
+}
+
+a:hover {
     cursor: pointer;
     color: cyan;
  }
 
- a:visited {
-     color: darkcyan;
- }
 
 nav {
     background-color: darkslategray;
     font-family: 'Courier New', Courier, monospace;
     font-size: medium;
-    padding: 2.5em 0;
-    margin: 2.5em 0;
+    margin: 0.5em 0;
     display: flex;
     justify-content: flex-end;
+    border-radius: 15%;
 }
 
 #nav-buttons {
     display: inline-flex;
     list-style-type: none;
-    padding: 1em;
+    padding: 0 1em;
     box-sizing: border-box;
 }
 
 #nav-buttons li {
     padding: 0 2.5em 0;
-}
-
-#About-Me-content {
-    display: inline-flex;
 }
 
 #About-Me-content h2 p {
@@ -81,8 +83,14 @@ nav {
     max-width: 50%;
     max-height: 50%;
 }
+#About-Me-Image{
+    width:40%;
+    margin:auto;
+    justify-content: center;
+}
 #Profile-Photo {
    margin: auto;
+   text-align: center;
    box-sizing: border-box;
    border: 0.5 em;
    border-style: solid;
@@ -96,7 +104,6 @@ section{
     margin: 0 5em;
 }
 .Portfolio-Section {
-    padding: 2.5em 0;
     display: flex;
     margin: 2.5em 0;
     justify-content: space-evenly;
@@ -125,6 +132,8 @@ section{
 
 .sidebar-Header h2 {
     padding: 0 1em 0 0;
+    box-sizing: content-box;
+    font-size: 1em;
 }
 
 #Project-Tiles img {
