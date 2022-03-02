@@ -89,8 +89,6 @@ nav {
     justify-content: center;
 }
 #Profile-Photo {
-   margin: auto;
-   text-align: center;
    box-sizing: border-box;
    border: 0.5 em;
    border-style: solid;
@@ -106,20 +104,17 @@ section{
 .Portfolio-Section {
     display: flex;
     margin: 2.5em 0;
-    justify-content: space-evenly;
-  }
+   }
 
-#Project-Highlight {
+#Project-Highlight.ImageAndCaption {
     width:100%;
-    max-width: 50em;
 }
 
 .Project-Images {
-    width: 25%;
-    height: 25%;
-    justify-content: auto;
-    max-width: 25em;
-    max-height: 25em;
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+    box-sizing: border-box;
 }
 
 .sidebar-Header {
@@ -144,7 +139,31 @@ section{
     box-sizing: border-box;
 } 
 
+.Project-Images img {
+    max-width:10%;
+}
+
 .content {
     width: 80%;
     padding: 0 1em;
+}
+
+#Project-Tiles.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.ImageAndCaption {
+    position: relative;
+  }
+
+.ImageAndCaption h3 {
+    position: absolute;
+    bottom:0;
+    left: 10%;
+    background-color: aquamarine;
+    border: solid 2px aquamarine;
+    border-radius: 5%;
+    color: black;
 }
