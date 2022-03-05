@@ -8,11 +8,6 @@
     </head> 
 
     <body>
-        <header>
-            <img src="./Assets/Images/CLR-Logo.png" alt="Portfolio-Logo">
-            <h1>Welcome to Christina <span id="elle">l</span>. Robinson's Portfolio</h1>        
-        </header>
-
         <nav>
             <ul id="nav-buttons">
                 <li><a href=#Home>Home</a></li>
@@ -21,6 +16,11 @@
                 <li><a href=#ContactMe>Contact Me</a></li>
             </ul>
         </nav>
+
+        <header>
+            <img src="./Assets/Images/CLR-Logo.png" alt="Portfolio-Logo">
+            <h1>Welcome to Christina <span id="elle">l</span>. Robinson's Portfolio</h1>        
+        </header>
 
         <main>
             <section id="About-Me" class="Portfolio-Section">
@@ -42,11 +42,12 @@
                 <div id="Projects-sidebar" class="sidebar-Header">
                     <h2>Projects & Apps</h2>
                 </div>
-                <div id="Project-Tiles" class="content">
-                    <div id= "Project-Highlight" class="ImageAndCaption">
-                        <a href="https://www.thoughtco.com/how-to-survive-a-blizzard-3444538"><img src="./Assets/Images/Snow-Pic.jpg" alt="Most recent project screenshot"></a>
+                <div id="Project-List" class="content">
+                    <div id= "Project-Highlight">
+                        <a href="https://www.thoughtco.com/how-to-survive-a-blizzard-3444538"><img src="./Assets/Images/Snow-Pic.jpg" id="Main-Project"alt="Most recent project screenshot"></a>
                         <h3><strong>Most Recent Project I've been working on</strong></h3>
                     </div>
+                    <!-- <div id="Project-Tiles"> -->
                     <div class="ImageAndCaption">
                         <a href="https://sevenmagicmountains.com/"><img src="./Assets/Images/Rock-Pic.jpg" alt="Project Screenshot 2" class="Project-Images"></a>
                         <h3><strong>7MM</strong></h3>
@@ -59,6 +60,11 @@
                         <a href="https://www.wta.org/go-hiking/hikes/dungeness-national-wildlife-refuge"><img src="./Assets/Images/Rainbow-Pic.jpg" alt="Project Screenshot 4" class="Project-Images"></a>
                         <h3><strong>Dungeness Spit</strong></h3>
                     </div>
+                    <div class="ImageAndCaption">
+                        <a href="https://houseofyumm.com/beef-birria-and-birria-tacos/"><img src="./Assets/Images/Tacos.jpg" alt="Project Screenshot 4" class="Project-Images"></a>
+                        <h3><strong>Birria Tacos</strong></h3>
+                        <!-- </div> -->
+                    </div>
                 </div>
             </section>
 
@@ -66,14 +72,13 @@
                 <div id="ContactMe-sidebar" class="sidebar-Header">
                     <h2>Contact Me</h2>
                 </div>
-                <div class="content">    
+                <div id="Contact-Options" class="content">    
                     <h2>Like what you see? Contact Me!</h2>
                     <ul>
                         <li>Email:<a href="mailto:xsnachannell@gmail.com">xsnachannell@gmail.com</a></li>
                         <li>GitHub:<a href="https://github.com/ChannellNumber5">@ChannellNumber5</a></li>
                         <li><a href="www.linkedin.com/in/channellnumber5">LinkedIn</a></li>
                     </ul>
-                    <br>
                     <h3>Want updates when I post a new project? Drop your email below!</h3>
                     <form>
                         <input type="text" value="Enter your Email Address" id="userEmailAddress" name="userEmailAddress">

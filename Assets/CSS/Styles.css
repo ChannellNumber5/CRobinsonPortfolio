@@ -1,19 +1,23 @@
+/* Sets Unversal font to sans-serif */
 * {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
   }
 
+  /* Styles the header section by: setting background color of the header section, aligns the text and content to center, displays content inline instead of block, deletes any margin so that the header reaches to the end of the page and adds a border radius */
 header {
     background-color: darkslategray;
     text-align: center;
     display:inline-flex;
-    margin:0;
     width: 100%;
     margin: 0 auto;
     border-radius: 5%;
 }
 
+/* Styles the header image by containing it to it's "section" adding a border and border radius, setting the height and width to 15% of the header div, so that the sizing is responsive and sets the top and bottom margins*/
+
 header img {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     border-style: solid;
     border-color: grey;
     border-radius: 30%;
@@ -22,101 +26,98 @@ header img {
     margin: 1em 0;
 }
 
+/*  Styles the h1 heading tag so that the font is black, centered on the page and has rounded corners */
+
 h1 {
     color: #17130B;
-    margin-top: 4em;
-    text-align: center;
     margin: auto;
+    background-color: aquamarine;
+    border-radius: 5px;
+    font-size: 2vw;
 }
+
+
+/* Styles the span with id "elle" */
 
 #elle {
     font-family: cursive;
 }
 
+/* sets the body with relative position, so that elements within the body can be set to different positions and then sets background color and removes any margin */
 body {
     position: relative;
     background-color:lightslategray;
     margin: 0;
 }
 
+/* Styles psuedo class for any anchor link by removing default browser settings/decorations for links */
 a:link {
     text-decoration: none;
     outline: none;
-    color: black;
+    color: aquamarine;
 }
+
+/* Styles psuedo class so that any link that is clicked on changes font color*/
 
 a:visited {
     color: darkcyan;
+
 }
 
+/* Styles psuedo class so that any link that is hovered over changes font color, a border is displayed around it and the text receives a shadow */
 a:hover {
     cursor: pointer;
     color: cyan;
+    font-size: larger;
  }
 
-
+/* Styles the navigation bar with to background color, a different font, font size, top and bottom margin, changes display to flex row instead of block, with the navigation options towards the right side of the screen, and adds rounded corners */
 nav {
-    background-color: darkslategray;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: medium;
-    margin: 0.5em 0;
+    background-color: black;
     display: flex;
     justify-content: flex-end;
-    border-radius: 15%;
+    border-radius: 5px;
+    position: sticky;
+    width: 100%;
+    top:0;
+    z-index: 2;
 }
 
+/* Styles the navigation section to be in a row vice column, with no bullets for the list items and the elements to stay within the nav "box" */
 #nav-buttons {
     display: inline-flex;
     list-style-type: none;
-    padding: 0 1em;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
+    margin: 0;
 }
 
+/* Styles the navigation options to have padding to the right and left  */
 #nav-buttons li {
     padding: 0 2.5em 0;
 }
 
-#About-Me-content h2 p {
-    text-align: center;
-    margin: auto;
-    vertical-align: middle;
-    max-width: 50%;
-    max-height: 50%;
-}
+/* Styles the About-Me-Image id to be centered on the page */
 #About-Me-Image{
-    width:40%;
-    margin:auto;
-    justify-content: center;
+    margin: auto;
 }
+
+/* Styles the profile photo id to be contained in it's container, with a border anda  max width and height and border radius */
 #Profile-Photo {
-   box-sizing: border-box;
-   border: 0.5 em;
+   /* box-sizing: border-box; */
    border-style: solid;
    border-color:aquamarine;
-   max-width: 50%;
-   max-height: 50%;
+   max-width: 75%;
+   max-height: 75%;
    border-radius: 15%;
 }
 
-section{
-    margin: 0 5em;
-}
+/* Sets the sections to flex display instead of block, so section title and content are in a row */
 .Portfolio-Section {
     display: flex;
     margin: 2.5em 0;
    }
 
-#Project-Highlight.ImageAndCaption {
-    width:100%;
-}
-
-.Project-Images {
-    width: 100%;
-    justify-content: center;
-    margin: auto;
-    box-sizing: border-box;
-}
-
+   /* Sets section header style to have right side border with text aligned to the right and to take up 20% of the page width */
 .sidebar-Header {
     border-right: 0.5em;
     border-right-style: solid;
@@ -125,38 +126,95 @@ section{
     width: 20%;
 }
 
+/* Sets the style of the h2 tag in the side bar header to be offset from the right side and to stay within it's container and adjusts the font size when the page is resized */
 .sidebar-Header h2 {
     padding: 0 1em 0 0;
-    box-sizing: content-box;
-    font-size: 1em;
+    /* box-sizing: border-box; */
+    font-size: 1.5vw;
 }
 
-#Project-Tiles img {
+/* Sets the style of the content class to take up 80% of the page, so responsive when the page is resized, sets the top and bottom padding and sets the display to flex */
+.content{
+    width: 80%;
+    padding: 0 1em;
+}
+
+#About-Me-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#Project-List.content {
+    Display:flex;
+    flex-wrap: wrap;
+    /* box-sizing: border-box; */
+    /* overflow:scroll; */
+}
+
+#Project-Highlight {
+    display:flex;
+   flex-basis: 100%;
+   flex-grow: 1;
+   position:relative;
+   border-style: solid;
+   border-color:aquamarine;
+   border: 0.5 em;
+   border-radius: 5%;
+   overflow: hidden;
+   /* box-sizing:border-box; */
+   height: auto;
+   flex: 2 0 auto;
+  }
+
+#Project-Highlight h3 {
+    position: absolute;
+    bottom:0;
+    left: 10%;
+    background-color: aquamarine;
+    border: solid 2px aquamarine;
+    border-radius: 5%;
+    color: black;
+}
+
+/* #Main-Project {
+    flex-basis: 100%;
+    justify-content: center;
+} */
+
+/* #Project-Tiles {
+    display: flex;
+    flex-wrap:wrap;
+
+} */
+
+   /* Styles the images in the Project-Tiles id to have a border with rounded edges, to stay in its container and have a set height and width */
+/* #Project-List img {
     border-style: solid;
     border-color:aquamarine;
     border: 0.5 em;
     border-radius: 10%;
     box-sizing: border-box;
-} 
-
-.Project-Images img {
-    max-width:10%;
-}
-
-.content {
-    width: 80%;
-    padding: 0 1em;
-}
-
-#Project-Tiles.content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
+    max-height: 100%;
+    max-width: 100%;
+}  */
 
 .ImageAndCaption {
-    position: relative;
-  }
+    position:relative;
+    border-style: solid;
+    border-color:aquamarine;
+    border: 0.5 em;
+    border-radius: 10%;
+    overflow: hidden;
+    width: 50%;
+    max-height:auto;
+    flex: 1 1 auto;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
 
 .ImageAndCaption h3 {
     position: absolute;
@@ -167,3 +225,10 @@ section{
     border-radius: 5%;
     color: black;
 }
+
+/* Sets the style of the Contact-Options id and content class to be block display and override the flex display */
+#Contact-Options.content {
+    display: block;
+   }
+
+
