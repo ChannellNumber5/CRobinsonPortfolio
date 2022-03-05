@@ -14,10 +14,9 @@ header {
     border-radius: 5%;
 }
 
-/* Styles the header image by containing it to it's "section" adding a border and border radius, setting the height and width to 15% of the header div, so that the sizing is responsive and sets the top and bottom margins*/
+/* Styles the header image adding a border and border radius, setting the height and width to 15% of the header div, so that the sizing is responsive and sets the top and bottom margins*/
 
 header img {
-    /* box-sizing: border-box; */
     border-style: solid;
     border-color: grey;
     border-radius: 30%;
@@ -187,7 +186,6 @@ nav {
 img {
     width: 100%;
     height: 100%;
-    /* object-fit: scale-down; */
     object-fit: cover;
     object-position: 50% 50%;
  }
