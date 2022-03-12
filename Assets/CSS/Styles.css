@@ -56,10 +56,15 @@ a:link {
     color: aquamarine;
 }
 
+#nav-buttons > li:hover {
+    background-color: aquamarine;
+}
+
+
 /* Styles psuedo class so that any link that is hovered over changes font color, and increases font size */
 a:hover {
     cursor: pointer;
-    color: cyan;
+    color: black;
     font-size: larger;
  }
 
@@ -91,7 +96,7 @@ nav {
 
 /* Styles the navigation options to have padding to the right and left  */
 #nav-buttons li {
-    padding: 0 2.5em 0;
+    padding: 0 0.5em 0;
 }
 
 /* Styles the About-Me-Image id to be centered on the page */
@@ -126,7 +131,7 @@ nav {
 /* Sets the style of the h2 tag in the side bar header to be offset from the right side and to adjust the font size when the page is resized */
 .sidebar-Header h2 {
     padding: 0 1em 0 0;
-    font-size: 1.5vw;
+    font-size: 1.5rem;
 }
 
 /* Sets the style of the content class to take up 80% of the page, so responsive when the page is resized, sets the top and bottom padding */
