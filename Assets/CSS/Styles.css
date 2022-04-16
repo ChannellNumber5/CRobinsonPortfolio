@@ -1,6 +1,6 @@
 /* Sets Unversal font to sans-serif and that children stay inside of their parent elements*/
 * {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Dosis', sans-serif;
     box-sizing: border-box;
   }
 
@@ -28,9 +28,13 @@ header img {
 /*  Styles the h1 heading tag so that the font is black, centered on the page and has rounded corners */
 
 h1 {
+    /* font-family: "Square Peg", cursive; */
     color: #17130B;
-    margin: auto;
-    background-color: aquamarine;
+    margin: auto 3vw;
+    align-self: left;
+    border-top: aquamarine solid;
+    border-bottom: aquamarine solid;
+    border-width: thin;
     border-radius: 5px;
     font-size: 2vw;
 }
@@ -39,7 +43,8 @@ h1 {
 /* Styles the span with id "elle" */
 
 #elle {
-    font-family: cursive;
+    font-family: 'Square Peg', cursive;
+    font-size: 3vw;
 }
 
 /* sets the body with relative position, so that elements within the body can be set to different positions and then sets background color and removes any margin */
@@ -54,6 +59,8 @@ a:link {
     text-decoration: none;
     outline: none;
     color: aquamarine;
+    font-family: "Square Peg", cursive;
+    font-size: 1.5vw;
 }
 
 #nav-buttons > li:hover {
