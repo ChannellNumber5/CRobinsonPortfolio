@@ -6,7 +6,7 @@ Click [here](https://channellnumber5.github.io/CRobinsonPortfolio/) to see the d
 
 And here is the screenshot of what it looks like:
 
-![Portfolio Page Screenshot](./Assets/Images/Portfolio-Page-Screenshot.png)
+![Portfolio Page Screenshot](./Assets/Images/CRobinsonPortfolio_screenShot_APR2022.png)
 
 ## Learning Lessons
 
