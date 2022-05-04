@@ -4,6 +4,7 @@
         <title>C.l.R Portfolio</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
@@ -12,23 +13,43 @@
     </head> 
 
     <body>
-        <nav>
-            <ul id="nav-buttons">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <img src="./Assets/Images/CLR-Logo.png" alt="Portfolio-Logo">
+                <h1>Christina <span id="elle">l </span>. Robinson | Web Developer</h1>  
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="nav-buttons">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            
+            <div id="nav-buttons" class="navbar-menu">
+                <div class="navbar-start">   
+                </div>
+                <div class="navbar-end">
+                    <a class="navbar-item" href=#Home>Home</a>
+                    <a class="navbar-item" href=#About-Me>About Me</a>
+                    <a class="navbar-item" href=#Projects-Apps> Projects & Apps</a>
+                    <a class="navbar-item" href=#ContactMe>Contact Me</a>
+                </div>
+            </div>
+            <!-- <ul id="nav-buttons">
                 <li><a   href=#Home>Home</a></li>
                 <li><a   href=#About-Me>About Me</a></li>
                 <li><a   href=#Projects-Apps> Projects & Apps</a></li>
                 <li><a   href=#ContactMe>Contact Me</a></li>
-            </ul>
+            </ul> -->
         </nav>
 
-        <header>
+        <!-- <header>
             <img src="./Assets/Images/CLR-Logo.png" alt="Portfolio-Logo">
             <h1>Christina <span id="elle">l </span>. Robinson | Web Developer</h1>        
-        </header>
+        </header> -->
 
         <main>
-            <section id="About-Me" class="Portfolio-Section">
-                <div id="About-Me-sidebar" class="sidebar-Header">
+            <section id="About-Me" class="Portfolio-Section" >
+                <div id="About-Me-sidebar" class="sidebar-Header" >
                     <h2>About Me</h2>
                 </div>
                 <div id="About-Me-content" class="content">
@@ -38,7 +59,7 @@
                     <div id="AboutMe-Description">
                         <h2>A Little About Me:</h2>
                         <p> I was born on the east coast but raised, for my formative years, in the beautiful Pacific Northwest. After graduating from Carnegie Mellon University with my bachelors in civil engineering, I pursued a career in the field of nuclear engineering. After a few years, I transitioned into working with our new engineers and found my calling to revamp our new hire training program and then transitioned to managing our engineering recruiting program. I've been enjoying this work and haven't really looked back to consider my work options until this past fall. After some soul searching, I realized I wanted more flexibility in my work schedule and more day-to-day problem solving, and, voila! I began my journey to becoming a fullstack web developer. If you want to follow my journey and see how far I progress, be sure to favorite this portfolio link. Also, check back in to join my mailing list! Once I have the database and Javascript running, I'll be able to send out updates on my finished projects and solicit input and requests for other projects that I should work on. </p>
-                        <p> If you want to know more about my background, check out my <a href="./Assets/files/RobinsonResume-APR2022.pdf"> resume </a> or visit the contact me section below! TTYL.</p>
+                        <p> If you want to know more about my background, check out my <a href="./Assets/files/RobinsonResume-APR2022.pdf" target="no_blank"> resume </a> or visit the contact me section below! TTYL.</p>
                     </div>
                 </div>
             </section>
@@ -48,24 +69,24 @@
                 </div>
                 <div id="Project-List" class="content">
                     <div id= "Project-Highlight">
-                        <a   href="https://sometimesimgrumpy.github.io/Taste-and-Sip/search.html"><img src="./Assets/Images/ProjectOneScreenShot08APR2022.png" id="Main-Project"alt="Most recent project screenshot"></a>
+                        <a   href="https://sometimesimgrumpy.github.io/Taste-and-Sip/search.html" target="no_blank"><img src="./Assets/Images/ProjectOneScreenShot08APR2022.png" id="Main-Project"alt="Most recent project screenshot"></a>
                         <h3><strong>Here's a group project I've just completed!</strong></h3>
                     </div>
                     <!-- <div id="Project-Tiles"> -->
                     <div class="ImageAndCaption">
-                        <a   href="https://channellnumber5.github.io/CR-Code-Quiz/"><img src="./Assets/Images/CodeQuiz_ScreenShot.png" alt="Project Screenshot 2" class="Project-Images"></a>
+                        <a   href="https://channellnumber5.github.io/CR-Code-Quiz/" target="no_blank"><img src="./Assets/Images/CodeQuiz_ScreenShot.png" alt="Project Screenshot 2" class="Project-Images"></a>
                         <h3><strong>Code Quiz Application</strong></h3>
                     </div>
                     <div class="ImageAndCaption">
-                        <a   href="https://channellnumber5.github.io/CR-SchedulerApp/"><img src="./Assets/Images/channellnumber5.github.io_CR-SchedulerApp_.png" alt="Project Screenshot 3" class="Project-Images"></a>
+                        <a   href="https://channellnumber5.github.io/CR-SchedulerApp/" target="no_blank"><img src="./Assets/Images/channellnumber5.github.io_CR-SchedulerApp_.png" alt="Project Screenshot 3" class="Project-Images"></a>
                         <h3><strong>Scheduler Application</strong></h3>
                     </div>    
                     <div class="ImageAndCaption">
-                        <a   href="https://channellnumber5.github.io/CR-WeatherDashboard/"><img src="./Assets/Images/CR-WeatherDashboardScreenShot.png" alt="Project Screenshot 4" class="Project-Images"></a>
+                        <a   href="https://channellnumber5.github.io/CR-WeatherDashboard/" target="no_blank"><img src="./Assets/Images/CR-WeatherDashboardScreenShot.png" alt="Project Screenshot 4" class="Project-Images"></a>
                         <h3><strong>Weather Dashboard Application</strong></h3>
                     </div>
                     <!-- <div class="ImageAndCaption">
-                        <a   href="https://houseofyumm.com/beef-birria-and-birria-tacos/"><img src="./Assets/Images/Tacos.jpg" alt="Project Screenshot 4" class="Project-Images"></a>
+                        <a   href="https://houseofyumm.com/beef-birria-and-birria-tacos/" target="no_blank"><img src="./Assets/Images/Tacos.jpg" alt="Project Screenshot 4" class="Project-Images"></a>
                         <h3><strong>Birria Tacos</strong></h3> -->
                         <!-- </div> -->
                     </div>
@@ -73,7 +94,7 @@
             </section>
 
             <section id="ContactMe" class="Portfolio-Section">
-                <div id="ContactMe-sidebar" class="sidebar-Header">
+                <div id="ContactMe-sidebar" class="sidebar-Header" >
                     <h2>Contact Me</h2>
                 </div>
                 <div id="Contact-Options" class="content">    

@@ -20,16 +20,22 @@ Finally, the current state of this webpage is using limited intances of psuedo e
 
 In addition to the coding bootcamp curriculum, here were a few webpages that were helpful in creating this portfolio:
 
--[CSS Layout - Aligning Items](https://www.w3schools.com/css/css_align.asp)
+- [CSS Layout - Aligning Items](https://www.w3schools.com/css/css_align.asp)
 
--[Psuedo Classes](https://developer.mozilla.org/en-US/docs/Web/CSS/:visited)
+- [Psuedo Classes](https://developer.mozilla.org/en-US/docs/Web/CSS/:visited)
 
--[Box-Sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing)
+- [Box-Sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing)
 
--[StackOverflow on Headers](https://stackoverflow.com/questions/41576098/header-and-footer-doesnt-reach-the-edges-of-webpage)
+- [StackOverflow on Headers](https://stackoverflow.com/questions/41576098/header-and-footer-doesnt-reach-the-edges-of-webpage)
 
--[Flexbox Zombies Game](https://mastery.games/flexboxzombies)
+- [Flexbox Zombies Game](https://mastery.games/flexboxzombies)
 
--[Scaling and Cropping Images](https://www.digitalocean.com/community/tutorials/css-cropping-images-object-fit)
+- [Scaling and Cropping Images](https://www.digitalocean.com/community/tutorials/css-cropping-images-object-fit)
 
--[Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
+- [Bulma Navbar Framework](https://bulma.io/documentation/components/navbar/)
+
+- [Media Query](https://www.w3schools.com/cssref/css3_pr_mediaquery.asp)
+
+-[Body to take up 100% of view port](https://www.freecodecamp.org/news/html-page-width-height/)

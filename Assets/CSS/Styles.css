@@ -4,24 +4,36 @@
     box-sizing: border-box;
   }
 
+  html {
+    max-height: 100%;
+  }
+
   /* Styles the header section by: setting background color of the header section, aligns the text and content to center, displays content inline instead of block, deletes any margin so that the header reaches to the end of the page and adds a border radius */
-header {
+.navbar {
     background-color: darkslategray;
-    text-align: center;
-    display:inline-flex;
-    width: 100%;
-    margin: 0 auto;
-    border-radius: 5%;
+    /* text-align: center;
+    display:inline-flex; */
+    /* width: 100%;
+    margin: 0 auto; */
+    border-radius: 5px;
 }
 
+.navbar a:hover{
+    background-color: darkslategray;
+    color: black;
+}
+
+.navbar-burger {
+    color: aquamarine;
+}
 /* Styles the header image adding a border and border radius, setting the height and width to 15% of the header div, so that the sizing is responsive and sets the top and bottom margins*/
 
-header img {
+nav img {
     border-style: solid;
     border-color: grey;
     border-radius: 30%;
-    height: 15%;
-    width: 15%;
+    height: 15vw;
+    width: 15vw;
     margin: 1em 0;
 }
 
@@ -36,7 +48,7 @@ h1 {
     border-bottom: aquamarine solid;
     border-width: thin;
     border-radius: 5px;
-    font-size: 2vw;
+    font-size: 3vw;
 }
 
 
@@ -44,14 +56,15 @@ h1 {
 
 #elle {
     font-family: 'Square Peg', cursive;
-    font-size: 3vw;
+    font-size: 5vw;
 }
 
 /* sets the body with relative position, so that elements within the body can be set to different positions and then sets background color and removes any margin */
 body {
-    position: relative;
+    /* position: relative; */
     background-color:lightslategray;
     margin: 0;
+    min-height: 100vh;
 }
 
 /* Styles psuedo class for any anchor link by removing default browser settings/decorations for links */
@@ -60,19 +73,19 @@ a:link {
     outline: none;
     color: aquamarine;
     font-family: "Square Peg", cursive;
-    font-size: 2vw;
+    font-size: 200%;
 }
 
-#nav-buttons > li:hover {
+/* #nav-buttons > li:hover {
     background-color: aquamarine;
-}
+} */
 
 
 /* Styles psuedo class so that any link that is hovered over changes font color, and increases font size */
 a:hover {
     cursor: pointer;
     color: black;
-    font-size: larger;
+    /* font-size: larger; */
  }
 
 
@@ -83,7 +96,7 @@ a:visited {
 }
 
 /* Styles the navigation bar with to background color, a different font, font size, top and bottom margin, changes display to flex row instead of block, with the navigation options towards the right side of the screen, and adds rounded corners and nav bar stays at top of screen when scrolling */
-nav {
+/* nav {
     background-color: black;
     display: flex;
     justify-content: flex-end;
@@ -92,19 +105,19 @@ nav {
     width: 100%;
     top:0;
     z-index: 2;
-}
+} */
 
 /* Styles the navigation section to be in a row vice column, with no bullets for the list items and is centered */
-#nav-buttons {
+/* #nav-buttons {
     display: inline-flex;
     list-style-type: none;
     margin: 0;
 }
 
 /* Styles the navigation options to have padding to the right and left  */
-#nav-buttons li {
+/* #nav-buttons li {
     padding: 0 0.5em 0;
-}
+} */ 
 
 /* Styles the About-Me-Image id to be centered on the page */
 #About-Me-Image{
@@ -244,4 +257,30 @@ img {
 /* Styles contact form input boxes to keep a box shadow blur when targeted as user tabs through page links */
 .userContactInfo:focus, button:focus {
     box-shadow: 0 0 10px teal;
+}
+
+@media only screen and (max-width: 414px) {
+    .Portfolio-Section {
+        display:block;
+    }
+
+    .sidebar-Header {
+        border-bottom: 0.5em;
+        border-bottom-style: double;
+        border-right:none;
+        border-color: teal;
+        text-align: center;
+        margin: auto;
+        width: 100%;
+    }
+       
+    /* Sets the style of the content class to take up 80% of the page, so responsive when the page is resized, sets the top and bottom padding */
+    .content{
+        padding: 0 1em;
+        margin: auto;
+    }
+
+    .ImageAndCaption {
+        width: 100%;
+    }
 }
