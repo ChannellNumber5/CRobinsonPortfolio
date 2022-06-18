@@ -16,6 +16,20 @@ Another challenge, was (and continues to be) using relative, fixed and abolute p
 
 Finally, the current state of this webpage is using limited intances of psuedo elements to change the colors of links when they are interacted with and that was and continues to be a big learning curve.
 
+## License
+
+This project is licensed under the MIT license.
+
+[MIT License](https://opensource.org/licenses/MIT)
+
+## Credits/Contact Info
+
+Christina Robinson
+
+Email: [CLRCoding@gmail.com](mailto:CLRCoding@gmail.com)
+
+Github: [ChannellNumber5](https://github.com/ChannellNumber5)
+
 ## Resources
 
 In addition to the coding bootcamp curriculum, here were a few webpages that were helpful in creating this portfolio:
