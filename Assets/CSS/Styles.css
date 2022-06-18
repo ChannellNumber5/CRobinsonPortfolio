@@ -25,6 +25,11 @@
 
 .navbar-burger {
     color: aquamarine;
+    margin: auto;
+}
+
+#navMenu {
+    margin:auto;
 }
 /* Styles the header image adding a border and border radius, setting the height and width to 15% of the header div, so that the sizing is responsive and sets the top and bottom margins*/
 
