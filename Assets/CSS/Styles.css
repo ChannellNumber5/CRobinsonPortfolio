@@ -93,6 +93,19 @@ a:hover {
     /* font-size: larger; */
  }
 
+#Project-Highlight a:hover {
+    cursor: pointer;
+    color: black;
+    opacity: 0.5;
+    /* font-size: larger; */
+ }
+
+ .ImageAndCaption a:hover {
+    cursor: pointer;
+    color: black;
+    opacity: 0.5;
+    /* font-size: larger; */
+ }
 
 /* Styles psuedo class so that any link that is clicked on changes font color*/
 a:visited {
@@ -232,6 +245,19 @@ img {
     color: black;
 }
 
+h6 .githubLinks {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    color:black;
+    border: solid 2px;
+    border-radius: 25%;
+    background-color: aquamarine;
+    margin: 0;
+    font-size: 1.5vw;
+    font-family: 'Dosis', sans-serif;
+}
+
 /* Styles of the Contact-Options id and content class to be block display and override the flex display */
 #Contact-Options.content {
     display: block;
@@ -287,5 +313,18 @@ img {
 
     .ImageAndCaption {
         width: 100%;
+    }
+
+    h6 .githubLinks {
+        position: absolute;
+        top: 0;
+        color:black;
+        border: solid 2px;
+        border-radius: 25;
+        background-color: aquamarine;
+        margin: 0;
+        font-size: 1.5vw;
+        font-family: 'Dosis', sans-serif;
+        left: 5%;
     }
 }
